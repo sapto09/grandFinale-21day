@@ -1,0 +1,376 @@
+/* 
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header dan container */
+
+header {
+    background-color: #2E323F;
+    width: 100%;
+    text-align: center;
+    padding: 1.5em .5em;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background-color:  #2E323F;;
+    color: white;
+    transition: opacity 250ms ease;
+    
+    position: absolute;
+    left: 0;
+    top: -6px;    
+}
+.logo {
+    height: 30px;
+}
+
+.nav-toggle:hover,.nav_toggle:focus {
+    opacity: .5;
+}
+
+.hamburger {
+    position: relative;
+    width: 50%;
+}
+
+.hamburger::before , .hamburger::after {
+    width: 100%;
+    content:'';
+}
+
+.hamburger,.hamburger::before,.hamburger::after {
+    background-color: white;
+    height: 3px;
+    display: block;
+    margin: 0 auto;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+.hamburger::after {
+    transform: translateY(3px);
+}
+/* hamburger animation dan tanda silang */
+.logo {
+    height: 30px;
+}
+
+.nav {
+    visibility:hidden;
+    height: 0;
+    position: absolute;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    width: auto;
+    position: relative;
+    top: 0;
+}
+
+/* nav item in phone */
+.nav__list  {
+    margin: 0;
+    width: 100%;
+    margin: 2.5em 0;
+}
+
+.list__item {
+    list-style: none;
+    margin-bottom: 1em;
+}
+
+.item__link {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Oswald' , sans-serif;
+    font-weight: 700;
+}
+
+.item_link:hover {
+    opacity: .75;
+}
+
+.nav__call {
+    background-color:#A59678 ;
+    border-radius: 100px;
+    padding: .3em 1em;
+}
+
+/* end of header and container */
+
+/* main */
+.section--first {
+    background-color:#3B4050 ;
+    color: white;
+    padding: .2em 0 1em 0;
+}
+
+.title {
+    margin: 1em 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+}
+.change-color {
+    color: #A59678;
+}
+.overview {
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 1.5rem;
+    margin: 1.5em 0;
+}
+.call {
+    background-color: #A59678;
+    color: white;
+    padding: .3em .6em;
+    border-radius: 100px;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.section--second {
+    padding: 1em 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1325rem;
+    text-align: center;
+    background-color: #e7e8eb;
+}
+
+.subtitle {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: .5em;
+}
+
+.three {
+    margin: 2em 0;
+}
+
+.section--third {
+    padding: 1em 0 3em 0;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.1325rem;
+}
+
+.col--big {
+    margin: 1em 0;
+}
+
+.example-image {
+    width: 100%;
+    margin: 1em 0;
+}
+figcaption {
+    font-size: .5rem;
+    margin-top: -2em;
+    margin-bottom: 1em;
+    text-transform: capitalize;
+}
+
+.aside {
+    background-color:#3B4050 ;
+    color: white;
+    text-align: center;
+    margin: 1em 0;
+    padding: 1em 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    line-height: 26px;
+    
+}
+
+.aside h3 {
+    font-family: 'Oswald',sans-serif;
+    margin-bottom: 1em;
+    font-size: 1.75rem;
+}
+
+footer {
+    background-color:#3B4050;
+    color: white;
+    font-family: 'Montserrat';
+    padding: 1em 0;
+}
+
+footer h1.container {
+    font-size: 1.5rem;
+    font-family: 'Oswald';
+    margin: 1em auto;
+    text-align: center;
+}
+
+footer .col--small {
+    width: 80%;
+}
+
+
+
+footer .col--big {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1.5em;
+}
+
+footer .three li {
+    list-style: none;
+    line-height: 24px;
+}
+.footer__link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__copyright {
+    font-size: .5rem;
+    color: #686e82;
+    text-align: center;
+    margin-top: 3em;
+}
+
+@media (min-width: 800px) {
+    .call {
+        font-size: 1rem;
+        padding: .75em 1em;
+    }
+
+    .section--first p {
+        margin-bottom: 0;
+    }
+
+    div.col--small, .section--second .row {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .col--small {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer .col--big {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    footer .col--big .three {
+        width: 20%;
+    }
+    aside, .three {
+        width: 30%;
+    }
+    header .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 80%;
+    }
+
+    .logo {
+        width: 20%;
+    }
+    .nav-toggle {
+        display: none;
+        visibility: hidden;
+    }
+    
+    /* nav layout */
+    .nav {
+        visibility: visible;
+        display: flex;
+        height: auto;
+        width: 100%;
+        justify-content: flex-end;
+        margin: 0;
+    }
+    .nav__list {
+        width: 30%;
+        
+    }
+    .nav__list--primary {
+        display: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav__list--secondary {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .list__item {
+        margin: 0;
+        width: 50%;
+    }
+}
+
+@media (min-width:1000px) {
+    /* main */
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .section--third .row {
+        align-items: center;
+    }
+
+
+    div.col--small {
+        display: block;
+    }
+    .col--big {
+        width: 50%;
+    }
+    .col--small {
+        width: 40%;
+    }
+    /* setion--third */
+    .col--small aside {
+        width: 100%;
+    }
+
+    /* footer */
+    footer .col--big {
+        width: 50%;
+        padding-left: 1em;
+    }
+
+    footer h1.container {
+        font-size: 2.5rem;
+        margin: 0 auto;
+    }
+    footer .row {
+        align-items: center;
+        justify-content: space-between;
+    }
+    .row .about {
+        text-align: left;
+        width: 40%;
+    }   
+    .about h4 {
+        margin-bottom: 1em;
+    }
+}
