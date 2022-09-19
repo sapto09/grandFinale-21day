@@ -106,6 +106,7 @@ header {
     color: #fff;
     font-family: 'Oswald' , sans-serif;
     font-weight: 700;
+    text-transform:uppercase;
 }
 
 .item_link:hover {
@@ -232,8 +233,7 @@ footer .col--small {
 
 footer .col--big {
     width: 80%;
-    margin: 0 auto;
-    margin-top: 1.5em;
+    margin: 1.5em auto;
 }
 
 footer .three li {
